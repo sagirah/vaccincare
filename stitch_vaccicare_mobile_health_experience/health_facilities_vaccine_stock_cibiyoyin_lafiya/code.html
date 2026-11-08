@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf8ff;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","surface-container":"#f1ebff","inverse-primary":"#cabeff","primary":"#2e0095","on-secondary-fixed-variant":"#4a3890","tertiary":"#003628","surface-container-lowest":"#ffffff","on-primary-container":"#b5a7ff","surface-container-high":"#ebe5ff","tertiary-fixed":"#85f7cf","on-primary-fixed":"#1b0062","on-primary-fixed-variant":"#4725ba","outline":"#797586","on-secondary-container":"#423088","inverse-on-surface":"#f4eeff","error-container":"#ffdad6","surface-container-low":"#f7f1ff","on-primary":"#ffffff","surface-bright":"#fdf8ff","on-surface-variant":"#484554","surface-dim":"#ddd5ff","tertiary-fixed-dim":"#68dbb4","background":"#fdf8ff","on-tertiary-container":"#51c6a0","on-surface":"#1c163c","primary-fixed-dim":"#cabeff","secondary-fixed-dim":"#cbbeff","tertiary-container":"#004f3b","inverse-surface":"#312b52","secondary-fixed":"#e6deff","on-tertiary-fixed":"#002117","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#00513d","primary-container":"#4522b8","secondary-container":"#b09efe","surface-container-highest":"#e5deff","on-secondary":"#ffffff","secondary":"#6250aa","surface":"#fdf8ff","on-secondary-fixed":"#1d0061","on-error-container":"#93000a","on-background":"#1c163c","surface-tint":"#5f44d3","outline-variant":"#c9c4d7","on-error":"#ffffff","surface-variant":"#e5deff","primary-fixed":"#e6deff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter":"1rem","margin":"1rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"body-lg":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,0,149,0.04)]"><div class="px-gutter h-6 flex items-center justify-between text-on-surface"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] leading-none">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px] leading-none">wifi</span><span class="material-symbols-outlined text-[16px] leading-none">battery_full</span></div></div><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-3"><img alt="VacciCare Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClvijmh_Qg_k35OK8wVoq_yFpz_Hkuinz17jB8K2cKHGwEj5w0G3hMwI7feN7GLdLTjQ-ou8wdUkZB8Aeyh7VTPrVS9BWgaCA0MQHp1wP68hNpNajKab4rXp1WHJOt6gLrgz9_HMxHICumQU7WDRagvFSodYcNvijC1L2ak2mRezuNYJmbv_OMXTlpXrc67kIDY-CNVGre5oUz53qlDGtZxThWOXLlT4Hyz3xpHCoy"/><div class="flex flex-col"><span class="font-headline-md text-headline-md font-bold text-on-surface leading-tight">VacciCare</span><span class="font-label-sm text-label-sm text-on-surface-variant capitalize tracking-normal">Healthcare Facilities</span></div></div><div class="flex items-center gap-2"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQqb3QFfKrQF-mmcJS-1Dlwfylo4MCj6023VI2TRP6VWSK7nO9TPlVKiKkPAu-8yDjLHXsogkYOKLWJZeeJrGm9rjFJOA2L1bVFe1Jl7UKPnkFsmcHHlu-ZQ_FKWZ_XsZKSUXqxFg5q5H9QDWKJ3ehvSx-_upBcnRAMAtfg_r13XTchaCH39HaDiturPGIiFmtqF76uKpTLMHBQGiR4Ng8Jp2n4F1KU-2a682ZD_HV"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Search & Bilingual Header -->
+<section class="flex flex-col gap-3 mb-4">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Kano Health Facilities</h1>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Asibitoci da Alluran Rigakafi • Real-Time Cold-Chain Stock</p>
+</div>
+<!-- Search Input Bar -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-[22px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-11 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded-xl shadow-[0_2px_12px_rgba(46,0,149,0.04)] focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="facilitySearch" placeholder="Search clinic, ward, or vaccine (e.g. BCG, Pentavalent)..." type="text"/>
+<button aria-label="Voice Search" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Quick Filter Chips Horizontal Track -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-margin px-margin">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" data-filter="all">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>All Clinics</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" data-filter="coldchain">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">ac_unit</span>
+<span>Verified Stock (Kayan Sanyi)</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" data-filter="emergency">
+<span class="material-symbols-outlined text-error text-[16px]">schedule</span>
+<span>24/7 Ward</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" data-filter="shortwait">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Short Wait (&lt;15m)</span>
+</button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm transition-all flex items-center gap-1.5" data-filter="ussd">
+<span class="material-symbols-outlined text-[16px]">dialpad</span>
+<span>SMS/USSD Booking</span>
+</button>
+</div>
+</section>
+<!-- Interactive Map & Geolocation Area -->
+<section class="relative w-full h-56 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(46,0,149,0.08)] mb-4 bg-surface-container-high">
+<!-- Static Map Canvas Container with data-location pipeline -->
+<div class="w-full h-full bg-cover bg-center" data-location="Kano Municipal, Nigeria" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSHkLMFdPK-G_9ZY6rlwGqruRRVcaXh_7OEKb-4UZ_lP8LB_qfZq_NyBldX0OZeuWWIAfrWEqUXD01ZYsirgGanYUZE1Cq1_AajgvnTo_m_h0pczLSnoMFJP94iu7vHPzHdniDYNqaHxQKgtoJP6ZsDidqW4d4tjqAojKnjDXR1w97kBE9YSI4a0F4OkNkUfXND1cRuZoIIpa4KTogss7XfUu94cQLkR4SbOhjRw3q')"></div>
+<!-- Live Map Subtle Vignette & Grid Tone -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-primary/10 pointer-events-none"></div>
+<!-- Active Pin: Murtala Mohammed Specialist Hospital (Selected) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-12 z-20 cursor-pointer group" id="pin-mmsh">
+<div class="relative flex flex-col items-center">
+<!-- Floating Pill Tag -->
+<div class="bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-md flex items-center gap-1.5 mb-1 animate-bounce">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold text-primary truncate max-w-[120px]">MMSH Kano (Verified)</span>
+</div>
+<!-- Pin Marker Bubble -->
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg ring-4 ring-white">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+</div>
+<div class="w-2.5 h-1.5 bg-black/30 rounded-full blur-[1px] mt-0.5"></div>
+</div>
+</div>
+<!-- Secondary Pin: Nassarawa Model PHC -->
+<div class="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer" id="pin-nassarawa">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-md ring-2 ring-white">
+<span class="material-symbols-outlined text-[16px]">vaccines</span>
+</div>
+<div class="bg-surface/90 px-1.5 py-0.5 rounded shadow text-[9px] font-bold text-on-surface mt-0.5 truncate max-w-[70px]">Nassarawa PHC</div>
+</div>
+<!-- Tertiary Pin: Gwagwarwa PHC -->
+<div class="absolute bottom-6 right-1/4 translate-x-1/2 z-10 cursor-pointer" id="pin-gwagwarwa">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-md ring-2 ring-primary-container">
+<span class="material-symbols-outlined text-[15px]">medical_services</span>
+</div>
+<div class="bg-surface/90 px-1.5 py-0.5 rounded shadow text-[9px] font-bold text-on-surface mt-0.5 truncate max-w-[70px]">Gwagwarwa</div>
+</div>
+<!-- Top GPS Telemetry Pill -->
+<div class="absolute top-3 left-3 z-20 flex items-center gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">GPS Active • Nassarawa LGA</span>
+</div>
+<!-- Floating "Locate Me / Nemo Wurina" CTA -->
+<button class="absolute bottom-3 right-3 z-20 h-10 px-3.5 bg-surface-container-lowest text-primary rounded-full shadow-lg flex items-center gap-1.5 active:scale-95 transition-transform font-label-md text-label-md font-semibold" id="locateMeBtn">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+<span>Nemo Wurina</span>
+</button>
+</section>
+<!-- Featured Facility Card: Active Selection -->
+<section class="flex flex-col w-full bg-surface-container-lowest rounded-2xl shadow-[0_4px_20px_rgba(46,0,149,0.06)] p-space-md mb-5">
+<!-- Header Title & Badges -->
+<div class="flex items-start justify-between gap-3 mb-2.5">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+            NPHCDA Hub
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-label-sm text-label-sm">Municipal</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface leading-tight truncate">Murtala Mohammed Hospital</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Babban Asibitin Murtala Kano • Kofar Nassarawa</p>
+</div>
+<!-- Facility Thumbnail -->
+<div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Sunny front entrance of a northern Nigerian modern healthcare hospital with clean brick facade, green health cross emblem, warm atmospheric daylight in Kano Nigeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGO5iw4Bx5fwG0AhdZj2QQVs8lTS_Z0Q2EDh9kotIaJ0E1br-f44ZqMuN0kDayEAPk41Ci7iiDIoy8MBLvedN_FW58b2O8bgpXX4_8ZF1VspDjmOcCpxol3oU-lH1KLLUPHdqQhyIR1DrBofNm-9Ajkgpd7kA16TnS1RI1ieEWQ73NSb8bs829Rg2V2xdKEhF6XsU0NUmc0ShYiK2WLqVxPj8jtHGHTqRsGm5s9z3I"/>
+</div>
+</div>
+<!-- Key Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-2 p-2.5 bg-surface-container-low rounded-xl mb-3.5 text-center">
+<div class="flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Distance</span>
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">near_me</span> 1.8 km
+        </span>
+</div>
+<div class="flex flex-col items-center justify-center border-x-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wait Time</span>
+<span class="font-label-md text-label-md font-bold text-tertiary-container flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">timer</span> &lt; 15 min
+        </span>
+</div>
+<div class="flex flex-col items-center justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Routine Ward</span>
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">done_all</span> Open Today
+        </span>
+</div>
+</div>
+<!-- Vaccine Inventory Status Tray (Live Solar Cold-Chain) -->
+<div class="flex flex-col gap-2 mb-4 bg-surface-container rounded-xl p-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">solar_power</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Solar Cold-Chain Stock</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold bg-tertiary-fixed/40 px-2 py-0.5 rounded-full">Updated 18m ago</span>
+</div>
+<!-- Vaccine Tags Grid -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pentavalent (1-3)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">DPT-HepB-Hib</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Measles &amp; Yellow F.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Rigakafin Kyanda</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">BCG &amp; Oral Polio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Rigakafin Shan Inna</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Rotavirus / PCV13</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Gastroenteritis</span>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- On-Duty Clinical Caregivers -->
+<div class="flex items-center justify-between mb-4 px-1">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface" data-alt="Close up warm portrait of a smiling African woman registered nurse wearing a clean purple healthcare hijab and clinical stethoscope in Kano clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_LO1y63PdxHG4MQqIB5xl6B-vWgk3W75cQGMdabLOOY4FBKPiQn3kX_-TKFcoKgHzPZz0ZFK0abE7YjAHpIkLtcwjKTm-hQXjCTYv3QWM2w4Qaa6ZDTFGOVI4DA7WOvvfp21V9QcXFsG51JproWLqiatgDSGQG_57zsPGlzpAs04wChxlzVYlM2hpGM8F1lrmPsJ5Oq6uucaZVu4gZWJmXsWsAc9tvcpkNMSTR8TP"/>
+<img class="w-8 h-8 rounded-full object-cover ring-2 ring-surface" data-alt="Close up portrait of a friendly professional northern Nigerian male doctor in white medical coat with stethoscope in a clean primary healthcare center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTTq0MOVyjC0OaiBa9VY8M0WP2qw-3zxt8Gf0zHOGUyLhpuBZAWcqpPcMJq4NR94XXAeNHklNGCytuEF6Zf7kppZQIA4Gd8ysl4S18w-56HuXRpnJJXlLtxWlhdUrzmXy77A1-5hmiBHZ5VSJ8oXjvUpbPQlhnkJR3tkMjQBvr-LB0FV-EqO-YMuLxbLk33wXbiRDPGLYscszZn17po77BPuPIyqQdar-X2GVTlEkh"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">On Duty: Nurse Zainab M. • Dr. Aliyu K.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Bilingual assistance: Hausa • English • Fulfulde</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">verified_user</span>
+</div>
+<!-- Primary & Secondary Interactive Action CTAs -->
+<div class="flex flex-col gap-2">
+<!-- High Priority Booking Pill Button -->
+<button class="w-full h-12 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-full shadow-[0_4px_16px_rgba(69,34,184,0.3)] flex items-center justify-center gap-2 active:bg-primary transition-all" id="bookAppointmentBtn">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+<span>Book Direct Slot • Shirya Ziyara</span>
+</button>
+<!-- Twin Actions: Navigation & Free Call -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-11 bg-surface-container-high text-primary font-label-md text-label-md rounded-full flex items-center justify-center gap-1.5 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Transit Map</span>
+</button>
+<button class="h-11 bg-surface-container-high text-primary font-label-md text-label-md rounded-full flex items-center justify-center gap-1.5 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call Clinic (Free)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Other Nearby Health Facilities Header -->
+<section class="flex flex-col w-full mb-3">
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Nearby Clinics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sauran Asibitocin Kusa • Verified routine immunisation</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-surface-container-high px-2.5 py-1 rounded-full">3 Centers</span>
+</div>
+<!-- Clinic Card 1: Nassarawa Model Comprehensive PHC -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md mb-3 shadow-[0_2px_12px_rgba(46,0,149,0.04)]">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+              Walk-in Ready
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1.2 km away</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Nassarawa Model Comprehensive PHC</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Along Gidan Murtala Road, Nassarawa Ward</p>
+</div>
+<button class="h-9 px-3.5 bg-surface-container text-primary font-label-md text-label-md rounded-full flex-shrink-0 flex items-center gap-1 hover:bg-surface-container-high transition-colors">
+<span>Select</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Quick Facility Highlights -->
+<div class="flex items-center gap-2 pt-2 border-t border-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary-container font-semibold">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span> Solar Chill Active
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">child_care</span> Infant Clinic Open
+        </span>
+</div>
+</div>
+<!-- Clinic Card 2: Gwagwarwa Primary Health Center -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md mb-3 shadow-[0_2px_12px_rgba(46,0,149,0.04)]">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">campaign</span>
+              Outreach Post
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.8 km away</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Gwagwarwa Health Center</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Brigade Quarters, Gwagwarwa LGA</p>
+</div>
+<button class="h-9 px-3.5 bg-surface-container text-primary font-label-md text-label-md rounded-full flex-shrink-0 flex items-center gap-1 hover:bg-surface-container-high transition-colors">
+<span>Select</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-primary-container font-semibold">
+<span class="material-symbols-outlined text-[15px]">verified</span> Polio Outreach Booth
+        </span>
+<span>•</span>
+<span>Closes 04:00 PM</span>
+</div>
+</div>
+<!-- Clinic Card 3: Kurna Primary Health Clinic -->
+<div class="flex flex-col bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_2px_12px_rgba(46,0,149,0.04)]">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Standard PHC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4.5 km away</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Kurna Primary Health Clinic</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Katsina Road, Dala Local Govt Area</p>
+</div>
+<button class="h-9 px-3.5 bg-surface-container text-primary font-label-md text-label-md rounded-full flex-shrink-0 flex items-center gap-1 hover:bg-surface-container-high transition-colors">
+<span>Select</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-surface-container-low text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary-container font-semibold">
+<span class="material-symbols-outlined text-[15px]">check</span> Pentavalent In Stock
+        </span>
+<span>•</span>
+<span>Maternal Care Desk</span>
+</div>
+</div>
+</section>
+<!-- Community Trust & Zero Stockout Logistics Banner -->
+<section class="flex flex-col gap-3 mt-3">
+<!-- NPHCDA Cold-Chain Trust Card -->
+<div class="flex items-start gap-3 p-4 bg-tertiary-fixed/20 rounded-2xl">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed-dim/40 flex items-center justify-center text-on-tertiary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg font-bold text-on-tertiary-fixed leading-snug">Zero Vaccine Stockouts Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          All listed facilities are linked to the <strong>Kano State MoH &amp; NPHCDA</strong> live temperature telemetry. Vaccines are kept safe under continuous solar power.
+        </p>
+</div>
+</div>
+<!-- Offline USSD & SMS Card for Low-Connectivity Grace -->
+<div class="flex items-center justify-between p-4 bg-surface-container rounded-2xl shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-on-primary flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">sms</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">No Internet? Offline Booking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dial <strong class="text-primary">*384*22#</strong> or SMS "CLINIC KANO"</span>
+</div>
+</div>
+<button class="px-3 py-1.5 bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold rounded-full shadow-sm active:scale-95 transition-transform">
+        Copy USSD
+      </button>
+</div>
+</section>
+<!-- Interactive Modal Drawer for Quick Booking Slot (Hidden by default, triggered via JS) -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-end justify-center transition-opacity" id="bookingDrawer">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-t-3xl p-5 shadow-2xl flex flex-col gap-4 animate-in slide-in-from-bottom duration-200">
+<div class="w-12 h-1.5 bg-outline-variant/60 rounded-full mx-auto mb-1"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Appointment Pass</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Book Baby Immunisation Slot</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Murtala Mohammed Specialist Hospital • Ward 2</p>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Slot Date Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Select Date • Zaɓi Rana</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="slot-date-btn active p-2.5 rounded-xl bg-primary-container text-on-primary text-center flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Tomorrow</span>
+<span class="font-label-lg text-label-lg font-bold">14 Oct</span>
+</button>
+<button class="slot-date-btn p-2.5 rounded-xl bg-surface-container text-on-surface text-center flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Wednesday</span>
+<span class="font-label-lg text-label-lg font-bold">15 Oct</span>
+</button>
+<button class="slot-date-btn p-2.5 rounded-xl bg-surface-container text-on-surface text-center flex flex-col items-center">
+<span class="font-label-sm text-label-sm">Thursday</span>
+<span class="font-label-lg text-label-lg font-bold">16 Oct</span>
+</button>
+</div>
+</div>
+<!-- Quick Morning/Afternoon Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface">Time Window • Lokaci</label>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-3 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-between">
+<span>Morning: 08:30 AM - 11:30 AM</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-between">
+<span>Afternoon: 01:00 PM - 03:30 PM</span>
+<span class="material-symbols-outlined text-[18px] text-outline">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+<!-- Child Profile Quick Tag -->
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[24px]">face</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Amina Bello (Age: 10 Weeks)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Due for: Pentavalent 2, OPV 2, Rotavirus 2</span>
+</div>
+</div>
+<!-- Confirmation CTA -->
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-lg flex items-center justify-center gap-2 active:bg-primary transition-all" id="confirmBookingBtn">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span>Tabbatar da Ziyara • Confirm Slot Free</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function initFacilitiesInteractions() {
+    // Filter chip toggle micro-interactions
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+          c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary-container', 'text-on-primary', 'active');
+        chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+    });
+
+    // Booking Drawer Modal handlers
+    const bookBtn = document.getElementById('bookAppointmentBtn');
+    const drawer = document.getElementById('bookingDrawer');
+    const closeBtn = document.getElementById('closeDrawerBtn');
+    const confirmBtn = document.getElementById('confirmBookingBtn');
+    const locateBtn = document.getElementById('locateMeBtn');
+
+    if (bookBtn && drawer && closeBtn) {
+      bookBtn.addEventListener('click', () => {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        drawer.classList.add('hidden');
+        drawer.classList.remove('flex');
+      });
+
+      drawer.addEventListener('click', (e) => {
+        if (e.target === drawer) {
+          drawer.classList.add('hidden');
+          drawer.classList.remove('flex');
+        }
+      });
+    }
+
+    if (confirmBtn) {
+      confirmBtn.addEventListener('click', () => {
+        confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> <span>An Shirya! Confirmed</span>';
+        setTimeout(() => {
+          drawer.classList.add('hidden');
+          drawer.classList.remove('flex');
+          confirmBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span> <span>Tabbatar da Ziyara &bull; Confirm Slot Free</span>';
+        }, 900);
+      });
+    }
+
+    if (locateBtn) {
+      locateBtn.addEventListener('click', () => {
+        locateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> <span>Updating...</span>';
+        setTimeout(() => {
+          locateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> <span>Kano Central</span>';
+          setTimeout(() => {
+            locateBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">my_location</span> <span>Nemo Wurina</span>';
+          }, 2000);
+        }, 800);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(46,0,149,0.05)]" data-active-classes="text-primary-container font-bold [&amp;_.nav-pill]:bg-surface-container-high [&amp;_.nav-icon]:text-primary-container [&amp;_.nav-label]:text-primary-container [&amp;_.nav-label]:font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all rounded-xl" data-path="home" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="nav-icon material-symbols-outlined text-[22px] transition-transform">home</span></div><span class="nav-label font-label-sm text-label-sm mt-0.5 tracking-tight transition-colors">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all rounded-xl" data-path="immunisation-schedule" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="nav-icon material-symbols-outlined text-[22px] transition-transform">calendar_today</span></div><span class="nav-label font-label-sm text-label-sm mt-0.5 tracking-tight transition-colors">Schedule</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all rounded-xl" data-path="healthcare-facilities" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="nav-icon material-symbols-outlined text-[22px] transition-transform">location_on</span></div><span class="nav-label font-label-sm text-label-sm mt-0.5 tracking-tight transition-colors">Facilities</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all rounded-xl" data-path="health-alerts" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="nav-icon material-symbols-outlined text-[22px] transition-transform">notifications_active</span></div><span class="nav-label font-label-sm text-label-sm mt-0.5 tracking-tight transition-colors">Alerts</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-all rounded-xl" data-path="more-menu" href="#"><div class="nav-pill flex items-center justify-center w-12 h-7 rounded-full transition-colors"><span class="nav-icon material-symbols-outlined text-[22px] transition-transform">widgets</span></div><span class="nav-label font-label-sm text-label-sm mt-0.5 tracking-tight transition-colors">More</span></a></div></nav></body></html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#5f44d3", "tertiary-container": "#004f3b", "on-secondary-fixed": "#1d0061", "on-surface": "#1c163c", "surface-dim": "#ddd5ff", "on-error-container": "#93000a", "primary-fixed-dim": "#cabeff", "primary": "#2e0095", "error-container": "#ffdad6", "on-secondary-container": "#423088", "surface-container-low": "#f7f1ff", "surface-bright": "#fdf8ff", "on-secondary": "#ffffff", "on-primary-fixed": "#1b0062", "on-primary-container": "#b5a7ff", "background": "#fdf8ff", "surface-container-high": "#ebe5ff", "secondary-fixed-dim": "#cbbeff", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#4a3890", "tertiary": "#003628", "secondary": "#6250aa", "tertiary-fixed-dim": "#68dbb4", "on-primary-fixed-variant": "#4725ba", "surface-container": "#f1ebff", "tertiary-fixed": "#85f7cf", "error": "#ba1a1a", "inverse-on-surface": "#f4eeff", "secondary-container": "#b09efe", "on-tertiary-fixed": "#002117", "secondary-fixed": "#e6deff", "primary-container": "#4522b8", "surface-container-highest": "#e5deff", "surface-variant": "#e5deff", "inverse-primary": "#cabeff", "primary-fixed": "#e6deff", "on-tertiary-fixed-variant": "#00513d", "outline": "#797586", "on-background": "#1c163c", "on-primary": "#ffffff", "outline-variant": "#c9c4d7", "on-surface-variant": "#484554", "on-error": "#ffffff", "surface": "#fdf8ff", "inverse-surface": "#312b52", "on-tertiary": "#ffffff", "on-tertiary-container": "#51c6a0" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "space-xs": "0.25rem", "margin": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xl": "2rem" }, fontFamily: { "body-sm": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"] }, fontSize: { "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "headline-xl-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["22px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-xl": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-md": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate max-w-[150px]">Guardian Profile Setup</h1></div><div class="flex items-center gap-space-sm"><div aria-label="Language Selector" class="flex items-center p-space-xs bg-surface-container rounded-full" role="radiogroup"><button aria-checked="true" class="px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary shadow-sm min-h-[32px] min-w-[36px] flex items-center justify-center" type="button">EN</button><button aria-checked="false" class="px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface min-h-[32px] min-w-[36px] flex items-center justify-center" type="button">HAU</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen px-margin"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Progress Stepper & Greeting -->
+<div class="flex flex-col gap-space-xs mt-2 mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-secondary">Mataki na 1 / Step 1 of 2</span>
+<span class="inline-flex items-center gap-1 text-tertiary font-label-sm text-label-sm bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+        Free Registration
+      </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-1/2 h-full bg-primary-container rounded-full transition-all duration-300"></div>
+</div>
+<div class="mt-space-sm">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface" id="screen-heading">
+        Create Account
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-snug" id="screen-subheading">
+        Join thousands of caregivers keeping their children protected with timely immunisation.
+      </p>
+</div>
+</div>
+<!-- Role Selection Pills -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<label class="font-label-md text-label-md text-on-surface-variant">Select Account Type / Zaɓi Matsayi</label>
+<div aria-label="Account Type" class="grid grid-cols-2 gap-space-sm p-1 bg-surface-container rounded-2xl" role="radiogroup">
+<!-- Caregiver (Active) -->
+<button aria-checked="true" class="flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 bg-surface-container-lowest shadow-sm text-on-surface" id="role-caregiver" onclick="selectRole('caregiver')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container mb-1.5">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">family_restroom</span>
+</div>
+<span class="font-label-md text-label-md text-center leading-tight">Caregiver / Parent</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center">(Uwa ko Uba)</span>
+</button>
+<!-- Health Worker -->
+<button aria-checked="false" class="flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="role-worker" onclick="selectRole('worker')" type="button">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant mb-1.5">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<span class="font-label-md text-label-md text-center leading-tight">Health Worker</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center">(Ma’aikacin Lafiya)</span>
+</button>
+</div>
+</div>
+<!-- Registration Form Card -->
+<form class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-2xl shadow-sm" id="signup-form" onsubmit="event.preventDefault(); triggerSuccess();">
+<!-- 1. Full Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="full-name">
+        Full Name / <span class="text-on-surface-variant font-normal">Sunan Mai Kula</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">person</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-low transition-colors" id="full-name" name="full-name" placeholder="e.g. Fatima Sadiq Abubakar" required="" style="box-shadow: inset 0 0 0 1px rgba(121, 117, 134, 0.25);" type="text"/>
+</div>
+</div>
+<!-- 2. Phone Number for SMS Alerts -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="phone-number">
+          Phone Number / <span class="text-on-surface-variant font-normal">Lambar Waya</span>
+</label>
+<span class="text-tertiary-container font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sms</span> Free SMS Reminders
+        </span>
+</div>
+<div class="relative flex items-center">
+<!-- Country Prefix Pill -->
+<div class="absolute left-1.5 h-9 px-2 bg-surface-container rounded-lg flex items-center gap-1 z-10 pointer-events-none">
+<span class="text-body-sm font-bold text-on-surface">🇳🇬 +234</span>
+</div>
+<input class="w-full h-12 pl-24 pr-4 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-low transition-colors" id="phone-number" name="phone" pattern="[0-9]{10}" placeholder="803 123 4567" required="" style="box-shadow: inset 0 0 0 1px rgba(121, 117, 134, 0.25);" type="tel"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+        You will receive vital schedule prompts even without active mobile data.
+      </p>
+</div>
+<!-- 3. State & LGA Matching -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- State Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="state-select">
+          State / <span class="text-on-surface-variant font-normal">Jiha</span>
+</label>
+<div class="relative flex items-center">
+<select class="w-full h-12 pl-3 pr-8 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-low transition-colors" id="state-select" onchange="updateLgaOptions(this.value)" style="box-shadow: inset 0 0 0 1px rgba(121, 117, 134, 0.25);">
+<option selected="" value="kano">Kano</option>
+<option value="kaduna">Kaduna</option>
+<option value="sokoto">Sokoto</option>
+<option value="abuja">FCT Abuja</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- LGA Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="lga-select">
+          LGA / <span class="text-on-surface-variant font-normal">Karamar Hukuma</span>
+</label>
+<div class="relative flex items-center">
+<select class="w-full h-12 pl-3 pr-8 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-low transition-colors" id="lga-select" style="box-shadow: inset 0 0 0 1px rgba(121, 117, 134, 0.25);">
+<option value="nassarawa">Nassarawa</option>
+<option value="dala">Dala</option>
+<option value="gwale">Gwale</option>
+<option value="fagge">Fagge</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 text-outline text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Closest Health Facility Notice -->
+<div class="flex items-center gap-space-sm p-3 bg-surface-container-low rounded-xl">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Nearby Facility Match</p>
+<p class="font-body-sm text-body-sm font-semibold text-on-surface truncate" id="facility-preview">
+          Nassarawa Model Comprehensive PHC
+        </p>
+</div>
+</div>
+<!-- 4. Create Password -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="password">
+        Create PIN / Password / <span class="text-on-surface-variant font-normal">Kalmar Sirri</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px] pointer-events-none">lock</span>
+<input class="w-full h-12 pl-10 pr-12 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-low transition-colors" id="password" minlength="6" name="password" oninput="checkPasswordStrength(this.value)" placeholder="••••••" required="" style="box-shadow: inset 0 0 0 1px rgba(121, 117, 134, 0.25);" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3 p-1 text-outline hover:text-on-surface flex items-center justify-center" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="eye-icon">visibility</span>
+</button>
+</div>
+<!-- Password Strength Meter -->
+<div class="flex items-center gap-2 mt-1">
+<div class="flex-1 h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-full bg-outline-variant transition-all" id="pwd-meter-1"></div>
+</div>
+<div class="flex-1 h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-full bg-outline-variant transition-all" id="pwd-meter-2"></div>
+</div>
+<div class="flex-1 h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-full bg-outline-variant transition-all" id="pwd-meter-3"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 min-w-[70px] text-right" id="pwd-label">
+          Min. 6 digits
+        </span>
+</div>
+</div>
+<!-- 5. Terms & NPHCDA Consent -->
+<div class="flex items-start gap-space-sm pt-1">
+<div class="relative flex items-center justify-center pt-0.5">
+<input class="w-5 h-5 rounded-md accent-primary-container cursor-pointer" id="terms-check" required="" type="checkbox"/>
+</div>
+<label class="font-body-sm text-body-sm text-on-surface-variant leading-snug cursor-pointer select-none" for="terms-check">
+        I agree to receive critical vaccination reminders via SMS and accept the 
+        <a class="text-primary-container font-semibold underline" href="#">NPHCDA Health Privacy Terms</a>.
+        <span class="block mt-0.5 text-on-surface-variant/80">Na yarda a riƙa turo min sakon rigakafi ta SMS.</span>
+</label>
+</div>
+<!-- Primary CTA Button -->
+<button class="mt-2 w-full h-[50px] min-h-[48px] rounded-full bg-primary-container hover:bg-primary active:scale-[0.99] text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md shadow-primary/20 transition-all duration-200 cursor-pointer" type="submit">
+<span>Create Account / Yi Rajista</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+<!-- Maternal & Trust Banner Image Card -->
+<div class="relative w-full rounded-2xl overflow-hidden mt-space-md bg-surface-container-high">
+<img class="w-full h-32 object-cover object-center" data-alt="A gentle and reassuring documentary portrait of a Nigerian mother wearing a soft lilac hijab, holding her calm baby warmly inside a clean, sunlit primary healthcare clinic in northern Nigeria, shot with natural soft morning light, authentic warm smiles, documentary healthcare aesthetic, rich medical lavender tones and soothing deep violet accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjhwz-K8-b29WTur9fHntg3KtBk8_7pl91mMXA5Ks5_fKIWGwFIA5dpPyVMU0B1ZlH2GvQYLdpQ7wVlkBoPL2bz1t7H74Ft3yL8YZ-2AYmcVEZXQF0xrjheG1FySemQt54OeNLb6FNsJUaUORM6gjLVG_lzG4gpcMwc3Vk3aBmjIQlkw7B8npwtuSeGDjj4X999TI7QpE6JdJjk4F51FyRIrnDdQtY8cw_yUWpu6Hb"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex items-end p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-white font-medium leading-tight drop-shadow-sm">
+          Protected under national immunization guidelines for infant welfare.
+        </p>
+</div>
+</div>
+</div>
+<!-- Trust Badges & Data Zero-Rating -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-md">
+<div class="flex items-center gap-2 p-3 bg-surface-container-low rounded-xl">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed/40 flex items-center justify-center shrink-0 text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface truncate">NPHCDA Verified</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Official PHC Portal</p>
+</div>
+</div>
+<div class="flex items-center gap-2 p-3 bg-surface-container-low rounded-xl">
+<div class="w-7 h-7 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">cell_tower</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface truncate">Zero Data / Free SMS</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">No network charges</p>
+</div>
+</div>
+</div>
+<!-- Already have an account footer -->
+<div class="flex flex-col items-center justify-center text-center mt-space-lg mb-space-sm">
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Already registered? 
+      <a class="text-primary-container font-semibold inline-flex items-center gap-0.5 ml-1 hover:underline" href="#">
+        Sign In / Shiga nan
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</p>
+</div>
+</div>
+<script>
+  function selectRole(role) {
+    const caregiverBtn = document.getElementById('role-caregiver');
+    const workerBtn = document.getElementById('role-worker');
+
+    if (role === 'caregiver') {
+      caregiverBtn.setAttribute('aria-checked', 'true');
+      workerBtn.setAttribute('aria-checked', 'false');
+      caregiverBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 bg-surface-container-lowest shadow-sm text-on-surface';
+      workerBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface';
+    } else {
+      workerBtn.setAttribute('aria-checked', 'true');
+      caregiverBtn.setAttribute('aria-checked', 'false');
+      workerBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 bg-surface-container-lowest shadow-sm text-on-surface';
+      caregiverBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl transition-all duration-200 text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  function updateLgaOptions(state) {
+    const lgaSelect = document.getElementById('lga-select');
+    const preview = document.getElementById('facility-preview');
+    lgaSelect.innerHTML = '';
+
+    const stateMap = {
+      kano: [
+        { val: 'nassarawa', label: 'Nassarawa', phc: 'Nassarawa Model Comprehensive PHC' },
+        { val: 'dala', label: 'Dala', phc: 'Dala Maternal Health Center' },
+        { val: 'gwale', label: 'Gwale', phc: 'Gwale Primary Immunisation Clinic' },
+        { val: 'fagge', label: 'Fagge', phc: 'Fagge Township PHC' }
+      ],
+      kaduna: [
+        { val: 'chikun', label: 'Chikun', phc: 'Chikun General Outpost PHC' },
+        { val: 'kaduna_north', label: 'Kaduna North', phc: 'Kawo Maternal Healthcare Clinic' },
+        { val: 'zaria', label: 'Zaria', phc: 'Tudun Wada Comprehensive PHC' }
+      ],
+      sokoto: [
+        { val: 'sokoto_north', label: 'Sokoto North', phc: 'Sultan Bello PHC' },
+        { val: 'wamakko', label: 'Wamakko', phc: 'Wamakko Community Health Center' }
+      ],
+      abuja: [
+        { val: 'amc', label: 'Abuja Municipal (AMAC)', phc: 'Garki Primary Care Centre' },
+        { val: 'bwari', label: 'Bwari', phc: 'Bwari Central Health Post' }
+      ]
+    };
+
+    const items = stateMap[state] || stateMap.kano;
+    items.forEach(item => {
+      const opt = document.createElement('option');
+      opt.value = item.val;
+      opt.textContent = item.label;
+      lgaSelect.appendChild(opt);
+    });
+
+    preview.textContent = items[0].phc;
+
+    lgaSelect.onchange = function() {
+      const matched = items.find(i => i.val === lgaSelect.value);
+      if (matched) preview.textContent = matched.phc;
+    };
+  }
+
+  function togglePasswordVisibility() {
+    const pwd = document.getElementById('password');
+    const eye = document.getElementById('eye-icon');
+    if (pwd.type === 'password') {
+      pwd.type = 'text';
+      eye.textContent = 'visibility_off';
+    } else {
+      pwd.type = 'password';
+      eye.textContent = 'visibility';
+    }
+  }
+
+  function checkPasswordStrength(val) {
+    const m1 = document.getElementById('pwd-meter-1');
+    const m2 = document.getElementById('pwd-meter-2');
+    const m3 = document.getElementById('pwd-meter-3');
+    const lbl = document.getElementById('pwd-label');
+
+    m1.className = 'h-full w-full bg-outline-variant transition-all';
+    m2.className = 'h-full w-full bg-outline-variant transition-all';
+    m3.className = 'h-full w-full bg-outline-variant transition-all';
+
+    if (val.length === 0) {
+      lbl.textContent = 'Min. 6 digits';
+      lbl.className = 'font-label-sm text-label-sm text-on-surface-variant shrink-0 min-w-[70px] text-right';
+    } else if (val.length < 6) {
+      m1.className = 'h-full w-full bg-error transition-all';
+      lbl.textContent = 'Too short';
+      lbl.className = 'font-label-sm text-label-sm text-error shrink-0 min-w-[70px] text-right';
+    } else if (val.length < 9) {
+      m1.className = 'h-full w-full bg-secondary-container transition-all';
+      m2.className = 'h-full w-full bg-secondary-container transition-all';
+      lbl.textContent = 'Fair';
+      lbl.className = 'font-label-sm text-label-sm text-secondary shrink-0 min-w-[70px] text-right';
+    } else {
+      m1.className = 'h-full w-full bg-tertiary-container transition-all';
+      m2.className = 'h-full w-full bg-tertiary-container transition-all';
+      m3.className = 'h-full w-full bg-tertiary-container transition-all';
+      lbl.textContent = 'Strong ✓';
+      lbl.className = 'font-label-sm text-label-sm text-tertiary-container font-bold shrink-0 min-w-[70px] text-right';
+    }
+  }
+
+  function triggerSuccess() {
+    const btn = document.querySelector('button[type="submit"]');
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Ana sarrafawa...</span>`;
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span><span>An yi nasara!</span>`;
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-tertiary-container');
+    }, 1200);
+  }
+</script></main></body></html>

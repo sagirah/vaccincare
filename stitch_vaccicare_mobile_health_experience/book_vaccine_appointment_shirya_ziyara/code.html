@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fdf8ff;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","surface-container":"#f1ebff","inverse-primary":"#cabeff","primary":"#2e0095","on-secondary-fixed-variant":"#4a3890","tertiary":"#003628","surface-container-lowest":"#ffffff","on-primary-container":"#b5a7ff","surface-container-high":"#ebe5ff","tertiary-fixed":"#85f7cf","on-primary-fixed":"#1b0062","on-primary-fixed-variant":"#4725ba","outline":"#797586","on-secondary-container":"#423088","inverse-on-surface":"#f4eeff","error-container":"#ffdad6","surface-container-low":"#f7f1ff","on-primary":"#ffffff","surface-bright":"#fdf8ff","on-surface-variant":"#484554","surface-dim":"#ddd5ff","tertiary-fixed-dim":"#68dbb4","background":"#fdf8ff","on-tertiary-container":"#51c6a0","on-surface":"#1c163c","primary-fixed-dim":"#cabeff","secondary-fixed-dim":"#cbbeff","tertiary-container":"#004f3b","inverse-surface":"#312b52","secondary-fixed":"#e6deff","on-tertiary-fixed":"#002117","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#00513d","primary-container":"#4522b8","secondary-container":"#b09efe","surface-container-highest":"#e5deff","on-secondary":"#ffffff","secondary":"#6250aa","surface":"#fdf8ff","on-secondary-fixed":"#1d0061","on-error-container":"#93000a","on-background":"#1c163c","surface-tint":"#5f44d3","outline-variant":"#c9c4d7","on-error":"#ffffff","surface-variant":"#e5deff","primary-fixed":"#e6deff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter":"1rem","margin":"1rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"body-lg":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script><style>body{min-height:max(884px,100dvh);}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen selection:bg-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,0,149,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate max-w-[210px]">Book Vaccine Appointment / Shirya Ziyara</h1></div><div class="flex items-center gap-space-sm"><div aria-label="Language Selector" class="flex items-center p-space-xs bg-surface-container rounded-full" role="radiogroup"><button aria-checked="true" class="px-space-sm py-1 rounded-full font-label-sm text-label-sm bg-primary-container text-on-primary shadow-sm min-h-[32px] min-w-[36px] flex items-center justify-center font-bold" type="button">EN</button><button aria-checked="false" class="px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface min-h-[32px] min-w-[36px] flex items-center justify-center font-medium" type="button">HAU</button></div><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen px-margin"><div class="flex flex-col w-full pb-24">
+<!-- Top Intro & Bilingual Greeting -->
+<div class="flex flex-col gap-space-xs mt-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+        PHC Fast-Track Booking
+      </span>
+<span class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">verified</span>
+        Verified NPHCDA
+      </span>
+</div>
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface tracking-tight mt-1">
+      Book Appointment
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Shirya ziyarar riga-kafi don kare lafiyar yaranku
+    </p>
+</div>
+<!-- Child Profile Selector Pill -->
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-full shadow-sm flex items-center justify-between mb-space-lg transition-transform active:scale-[0.99]">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a healthy, joyful 2-year-old Nigerian toddler girl named Aisha with neat cornrows, wearing a soft lavender cotton shirt, gentle warm natural lighting, high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZDSsJtltXTrVmhrzVdMwe4KwBzEFwyz9pZkRZRDrGmIrTE2jDsSAPf73T9KZYuRL__I2harPssDVIYq7w0nM79IHvATghkCzCOwHlHWazR-waTQ_ADHAeFB-eAeue8Ksy4xAwcwkYEqAY-3F7KLkNNB_SegF8x464SicSdYvAsjd1vl4XcmNQX5gTSTNZpp6-MNUrLRZYyOFVpacnam9T18jRYq_I8oZMR9JHC0KV"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Selected Child / Yaro</span>
+<span class="font-headline-md text-headline-md text-on-surface truncate">Aisha Bello</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-3 py-1.5 rounded-full mr-1 flex-shrink-0">
+<span class="font-label-md text-label-md text-primary font-bold">2 yrs 4 mos</span>
+<span class="material-symbols-outlined text-[18px] text-primary">expand_more</span>
+</div>
+</div>
+<!-- Vaccine Due Section -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Vaccine Scheduled</label>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed px-2.5 py-0.5 rounded-full font-bold">
+        Recommended Dose
+      </span>
+</div>
+<!-- Active Vaccine Dose Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-high rounded-full opacity-40 pointer-events-none"></div>
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary-container flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">vaccines</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Pentavalent 3 &amp; PCV 3</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Dose 3 • Diphtheria, Pertussis, Tetanus &amp; Pneumococcal</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">event_available</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Due: 28 Oct 2026</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">
+          In 5 Days
+        </span>
+</div>
+</div>
+</div>
+<!-- Facility Selector Card -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Healthcare Facility</label>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline" type="button">Change / Canza</button>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">
+            Murtala Mohammed Specialist Hospital
+          </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+            Kano City • 5.2 km away
+          </span>
+</div>
+<span class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</span>
+</div>
+<!-- Live Cold Chain Inventory Badge -->
+<div class="w-full rounded-lg bg-tertiary-fixed/30 p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary">ac_unit</span>
+<span class="font-label-md text-label-md text-tertiary font-bold leading-none">Cold-Chain Stock Verified</span>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary text-on-tertiary text-label-sm font-label-sm font-bold">
+          100% In Stock
+        </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+          Hours: 08:00 AM – 04:00 PM
+        </span>
+<span class="text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Open Today
+        </span>
+</div>
+</div>
+</div>
+<!-- Date Selection (Horizontal Day Picker) -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Select Date / Zaɓi Rana</label>
+<span class="font-label-sm text-label-sm text-secondary font-medium">October 2026</span>
+</div>
+<!-- Day Buttons Scroll/Flex Grid -->
+<div class="grid grid-cols-4 gap-2 w-full" id="datePicker">
+<!-- Mon 26 -->
+<button class="date-chip flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none" onclick="selectDate(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Mon</span>
+<span class="font-headline-md text-headline-md my-0.5">26</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Oct</span>
+</button>
+<!-- Tue 27 -->
+<button class="date-chip flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none" onclick="selectDate(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tue</span>
+<span class="font-headline-md text-headline-md my-0.5">27</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Oct</span>
+</button>
+<!-- Wed 28 (Recommended Default) -->
+<button class="date-chip active-date flex flex-col items-center justify-center p-2.5 rounded-xl bg-primary text-on-primary shadow-md relative transition-all focus:outline-none" onclick="selectDate(this)" type="button">
+<span class="absolute -top-2 left-1/2 -translate-x-1/2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold px-1.5 py-0.2 rounded-full whitespace-nowrap">
+          Ideal
+        </span>
+<span class="font-label-sm text-label-sm opacity-90 uppercase">Wed</span>
+<span class="font-headline-md text-headline-md my-0.5">28</span>
+<span class="font-label-sm text-label-sm opacity-90">Oct</span>
+</button>
+<!-- Thu 29 -->
+<button class="date-chip flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none" onclick="selectDate(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Thu</span>
+<span class="font-headline-md text-headline-md my-0.5">29</span>
+<span class="font-label-sm text-label-sm text-outline-variant">Oct</span>
+</button>
+</div>
+</div>
+<!-- Time Slots Grid -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Available Time Slots / Lokaci</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+        Short Wait Times
+      </span>
+</div>
+<div class="grid grid-cols-2 gap-2.5 w-full" id="timeSlots">
+<!-- 08:30 AM Slot -->
+<button class="slot-pill flex flex-col items-start p-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-left" onclick="selectSlot(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Morning • Da Safe</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">08:30 AM</span>
+<span class="text-label-sm font-label-sm text-outline mt-1">Standard clinic queue</span>
+</button>
+<!-- 10:00 AM Slot (Recommended / Pre-selected) -->
+<button class="slot-pill active-slot flex flex-col items-start p-3 rounded-xl bg-secondary-fixed text-on-secondary-fixed shadow-sm transition-all text-left relative overflow-hidden" onclick="selectSlot(this)" type="button">
+<span class="font-label-sm text-label-sm text-primary font-bold">Morning • Da Safe</span>
+<span class="font-headline-md text-headline-md text-primary-container mt-0.5">10:00 AM</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold mt-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span> Less Busy
+        </span>
+</button>
+<!-- 11:30 AM Slot -->
+<button class="slot-pill flex flex-col items-start p-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-left" onclick="selectSlot(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Midday • Tsakar Rana</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">11:30 AM</span>
+<span class="text-label-sm font-label-sm text-outline mt-1">Normal attendance</span>
+</button>
+<!-- 01:30 PM Slot -->
+<button class="slot-pill flex flex-col items-start p-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-left" onclick="selectSlot(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Afternoon • Yamma</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-0.5">01:30 PM</span>
+<span class="text-label-sm font-label-sm text-outline mt-1">Quiet clinic period</span>
+</button>
+</div>
+</div>
+<!-- Reminder Preferences (Nigeria Localized: SMS & Hausa Audio) -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<label class="font-label-lg text-label-lg text-on-surface">Reminder Preferences / Sanarwa</label>
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<!-- SMS Checkbox Option -->
+<label class="flex items-start gap-3 cursor-pointer select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="w-5 h-5 rounded text-primary-container accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Free SMS Reminder</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sent 24 hours prior to your scheduled time</span>
+</div>
+</label>
+<div class="w-full h-px bg-surface-container-high"></div>
+<!-- Hausa Voice Call Option -->
+<label class="flex items-start gap-3 cursor-pointer select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="w-5 h-5 rounded text-primary-container accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Voice Call in Hausa</span>
+<span class="bg-secondary-fixed text-primary px-1.5 py-0.2 rounded font-label-sm text-label-sm font-bold">Audio</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Taimakon Murya mai sauki ta wayar salula</span>
+</div>
+</label>
+</div>
+</div>
+<!-- NPHCDA Zero-Cost & Clinical Trust Notice -->
+<div class="w-full rounded-xl bg-surface-container-high p-space-md mb-space-lg flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<h4 class="font-headline-md text-headline-md text-primary leading-snug">
+        Vaccines are 100% Free
+      </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Rigakafi kyauta ne a karkashin hukumar NPHCDA. Please bring your child's physical Yellow Immunization Card or present this app profile at the health desk.
+      </p>
+</div>
+</div>
+<!-- Fixed Sticky Bottom Booking Action Area -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface/90 backdrop-blur-md z-40 shadow-[0_-4px_20px_rgba(46,0,149,0.06)]">
+<div class="max-w-md mx-auto flex flex-col gap-1.5">
+<button class="w-full h-[52px] rounded-full bg-primary-container hover:bg-primary active:scale-[0.98] text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md transition-all" id="bookCtaBtn" onclick="handleAppointmentConfirm()" type="button">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+<span>Confirm Appointment / Tabbatar da Ziyara</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant">
+        No payment required • Easily reschedule anytime
+      </p>
+</div>
+</div>
+<!-- Success Notification Feedback Modal / Sheet (Triggered dynamically) -->
+<div class="hidden fixed inset-0 z-50 flex items-end justify-center bg-inverse-surface/40 backdrop-blur-sm p-margin" id="confirmationSheet">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-xl p-space-lg shadow-xl flex flex-col items-center text-center animate-bounce-short">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-sm">
+<span class="material-symbols-outlined text-[36px]">check_circle</span>
+</div>
+<h3 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">Appointment Confirmed!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 mb-space-md">
+        An tsara ziyarar Aisha don <strong>Laraba, 28 Oct 2026</strong> da karfe <strong>10:00 AM</strong> a Asibitin Murtala Mohammed Specialist Hospital.
+      </p>
+<div class="w-full bg-surface-container-low rounded-lg p-space-sm mb-space-md text-left flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-primary">mark_chat_read</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SMS &amp; Hausa Voice Alert Scheduled</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">A confirmation SMS has been dispatched.</span>
+</div>
+</div>
+<button class="w-full h-12 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold" onclick="closeSheet()" type="button">
+        View Digital Child Card
+      </button>
+</div>
+</div>
+</div>
+<script>
+  function selectDate(element) {
+    document.querySelectorAll('.date-chip').forEach(chip => {
+      chip.classList.remove('bg-primary', 'text-on-primary', 'active-date');
+      chip.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      const rec = chip.querySelector('.bg-tertiary-fixed');
+      if (rec && chip !== element) {
+        rec.classList.remove('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+        rec.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+
+    element.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+    element.classList.add('bg-primary', 'text-on-primary', 'active-date');
+    const badge = element.querySelector('.bg-surface-container');
+    if (badge) {
+      badge.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      badge.classList.add('bg-tertiary-fixed', 'text-on-tertiary-fixed');
+    }
+  }
+
+  function selectSlot(element) {
+    document.querySelectorAll('.slot-pill').forEach(slot => {
+      slot.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed', 'active-slot');
+      slot.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      
+      const title = slot.querySelector('span:nth-child(2)');
+      if (title) {
+        title.classList.remove('text-primary-container');
+        title.classList.add('text-on-surface');
+      }
+    });
+
+    element.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+    element.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed', 'active-slot');
+    
+    const selectedTitle = element.querySelector('span:nth-child(2)');
+    if (selectedTitle) {
+      selectedTitle.classList.remove('text-on-surface');
+      selectedTitle.classList.add('text-primary-container');
+    }
+  }
+
+  function handleAppointmentConfirm() {
+    const sheet = document.getElementById('confirmationSheet');
+    if (sheet) {
+      sheet.classList.remove('hidden');
+    }
+  }
+
+  function closeSheet() {
+    const sheet = document.getElementById('confirmationSheet');
+    if (sheet) {
+      sheet.classList.add('hidden');
+    }
+  }
+</script></main></body></html>

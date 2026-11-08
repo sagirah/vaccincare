@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="en" style=""><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>VacciCare - Child Immunisation Reminder</title>
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            vacci: {
+              dark: '#1c0947',
+              primary: '#2b1070',
+              deep: '#361585',
+              violet: '#4a1e9e',
+              glow: '#7839ee',
+              lavender: '#d8ccf7',
+              subtext: '#c3b4ed'
+            }
+          },
+          fontFamily: {
+            sans: ['SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.95; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.015); }
+    }
+    @keyframes wave-glow {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.55; }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 4s ease-in-out infinite;
+    }
+    .animate-wave-glow {
+      animation: wave-glow 6s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 min-h-screen flex items-center justify-center p-0 sm:p-4 selection:bg-purple-500 selection:text-white antialiased">
+<!-- BEGIN: MobileContainer -->
+<!-- iPhone 14/15 Pro standard screen ratio container -->
+<main class="relative w-full max-w-[393px] h-[852px] bg-gradient-to-b from-[#210959] via-[#2c1074] to-[#1c0847] text-white overflow-hidden shadow-2xl rounded-none sm:rounded-[48px] flex flex-col justify-between border-0 sm:border-[8px] sm:border-slate-800">
+<!-- BEGIN: TopStatusBar -->
+<!-- iOS Native Status Bar (9:41, Cellular, Wi-Fi, Battery) -->
+<header class="relative z-30 pt-3 px-7 flex justify-between items-center text-white select-none">
+<!-- Current Time -->
+<span class="text-[15px] font-semibold tracking-tight text-white/95">9:41</span>
+<!-- Status Icons -->
+<div class="flex items-center space-x-2 text-white/95">
+<!-- Signal Icon -->
+<svg class="w-4 h-3.5 fill-current" viewBox="0 0 17 12">
+<rect height="3" rx="0.75" width="3" x="0" y="9"></rect>
+<rect height="6" rx="0.75" width="3" x="4.5" y="6"></rect>
+<rect height="9" rx="0.75" width="3" x="9" y="3"></rect>
+<rect height="12" rx="0.75" width="3" x="13.5" y="0"></rect>
+</svg>
+<!-- Wi-Fi Icon -->
+<svg class="w-4 h-3.5 fill-current" viewBox="0 0 16 12">
+<path clip-rule="evenodd" d="M8 2.5C5.1 2.5 2.5 3.7 0.7 5.6C0.4 5.9 0.4 6.4 0.7 6.7L7.4 13.4C7.7 13.7 8.3 13.7 8.6 13.4L15.3 6.7C15.6 6.4 15.6 5.9 15.3 5.6C13.5 3.7 10.9 2.5 8 2.5ZM2.1 7.1C3.6 5.6 5.7 4.7 8 4.7C10.3 4.7 12.4 5.6 13.9 7.1L8 13L2.1 7.1Z" fill-rule="evenodd"></path>
+</svg>
+<!-- Battery Icon -->
+<div class="flex items-center">
+<div class="w-5 h-2.5 rounded-[3px] border border-white flex items-center p-0.5">
+<div class="w-3.5 h-full bg-white rounded-[1.5px]"></div>
+</div>
+<div class="w-0.5 h-1 bg-white rounded-r-sm ml-[1px]"></div>
+</div>
+</div>
+</header>
+<!-- END: TopStatusBar -->
+<!-- BEGIN: MainBrandHeroSection -->
+<!-- Centered Logo, Typography, and Core Brand Identity -->
+<section aria-label="Brand Hero" class="relative z-20 flex-1 flex flex-col items-center justify-center px-6 -mt-10">
+<!-- Ambient Glow Behind Logo -->
+<div class="absolute w-64 h-64 bg-purple-500/20 rounded-full blur-3xl pointer-events-none -z-10 animate-wave-glow"></div>
+<!-- VacciCare Heart Emblem Icon -->
+<div class="mb-7 transform transition-transform duration-700 hover:scale-105" data-purpose="app-logo"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqmFbenBMg2fGJ0Nppnccs7LA2cJ7ji8pfzItEk7hDrbaLtLHoUa94YhdfVUbeII_Y7gBKedAwZzQNVqEFt_oJWe_ZQkT6iRXavBFYF83AH3NVWZ_p6sHmMofNAWQSu0bCOvIlC__3O-hUqsZVhrqzxf760oUjT8Bsz0WQe0Shu7Weu74ZFkCixSea6n1WWaIRBIdnG6J4PmHrR9dU3J-5dljG2Jjns_yrlB46_B6UbWoaFEWKzyRXnA" alt="VacciCare Logo" class="w-28 h-28 object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.35)] rounded-2xl"></div>
+<!-- App Name Header -->
+<h1 class="text-[44px] font-bold tracking-tight text-white text-center leading-none mb-2.5 filter drop-shadow-md">
+        VacciCare
+      </h1>
+<!-- App Sub-Title / Category -->
+<p class="text-vacci-subtext text-[15px] sm:text-base font-normal tracking-wide text-center mb-8">
+        Child Immunisation Reminder
+      </p>
+<!-- App Philosophical Tagline -->
+<div class="mt-4 px-4 py-2 text-center" data-purpose="tagline-container">
+<blockquote class="text-white/95 text-[17px] sm:text-[18px] font-serif italic tracking-wide">
+          “Every Vaccine, Right on Time!”
+        </blockquote>
+</div>
+</section>
+<!-- END: MainBrandHeroSection -->
+<!-- BEGIN: DecorativeLuminousWaves -->
+<!-- Layered Purple Curved Waves at Bottom Third (Exact from design) -->
+<div aria-hidden="true" class="absolute bottom-0 left-0 right-0 h-64 pointer-events-none overflow-hidden z-10">
+<svg class="absolute bottom-0 left-0 w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 390 280">
+<!-- Back Subtle Wave Layer -->
+<path d="M-20 180C70 120 180 230 420 110L420 300L-20 300Z" fill="url(#waveGradient1)" fill-opacity="0.3"></path>
+<!-- Intermediate Wave Layer with Violet Highlight -->
+<path d="M-30 200C90 140 240 250 420 140L420 300L-30 300Z" fill="url(#waveGradient2)" fill-opacity="0.5"></path>
+<!-- Foreground Luminous Crest Line -->
+<path d="M-40 220C100 170 230 260 420 160" stroke="url(#crestGlow)" stroke-linecap="round" stroke-opacity="0.75" stroke-width="2.5"></path>
+<path d="M-20 235C110 185 240 270 420 175" stroke="#9055ff" stroke-linecap="round" stroke-opacity="0.4" stroke-width="0.75"></path>
+<defs>
+<linearGradient id="waveGradient1" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4d1cb0"></stop>
+<stop offset="100%" stop-color="#1b0847"></stop>
+</linearGradient>
+<linearGradient id="waveGradient2" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#692ae8"></stop>
+<stop offset="50%" stop-color="#3d1487"></stop>
+<stop offset="100%" stop-color="#140436"></stop>
+</linearGradient>
+<linearGradient id="crestGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#aa75ff" stop-opacity="0.1"></stop>
+<stop offset="45%" stop-color="#d4b8ff" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#7232e8" stop-opacity="0.2"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<!-- END: DecorativeLuminousWaves -->
+<!-- BEGIN: BottomMottoAndIndicators -->
+<!-- Bottom Brand Narrative & iOS Home Indicator Bar -->
+<footer class="relative z-30 pb-5 px-6 flex flex-col items-center">
+<!-- Subtle Mission Statement -->
+<p class="text-[11.5px] tracking-wider text-vacci-lavender/70 font-light text-center uppercase mb-6 flex items-center justify-center space-x-1.5 flex-wrap">
+<span class="">Healthy Children</span>
+<span class="text-purple-400/60">•</span>
+<span class="">Stronger Communities</span>
+<span class="text-purple-400/60">•</span>
+<span class="">A Brighter Tomorrow</span>
+</p>
+<!-- Interactive / Transition Indicator: Soft subtle loading dots -->
+
+<!-- iOS Bottom Home Indicator Pill -->
+<div class="w-32 h-1 bg-white/40 rounded-full mt-3"></div>
+</footer>
+<!-- END: BottomMottoAndIndicators -->
+</main>
+<!-- END: MobileContainer -->
+
+
+</body></html>

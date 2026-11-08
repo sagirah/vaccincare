@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#fdf8ff;}body{overscroll-behavior:none;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","surface-container":"#f1ebff","inverse-primary":"#cabeff","primary":"#2e0095","on-secondary-fixed-variant":"#4a3890","tertiary":"#003628","surface-container-lowest":"#ffffff","on-primary-container":"#b5a7ff","surface-container-high":"#ebe5ff","tertiary-fixed":"#85f7cf","on-primary-fixed":"#1b0062","on-primary-fixed-variant":"#4725ba","outline":"#797586","on-secondary-container":"#423088","inverse-on-surface":"#f4eeff","error-container":"#ffdad6","surface-container-low":"#f7f1ff","on-primary":"#ffffff","surface-bright":"#fdf8ff","on-surface-variant":"#484554","surface-dim":"#ddd5ff","tertiary-fixed-dim":"#68dbb4","background":"#fdf8ff","on-tertiary-container":"#51c6a0","on-surface":"#1c163c","primary-fixed-dim":"#cabeff","secondary-fixed-dim":"#cbbeff","tertiary-container":"#004f3b","inverse-surface":"#312b52","secondary-fixed":"#e6deff","on-tertiary-fixed":"#002117","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#00513d","primary-container":"#4522b8","secondary-container":"#b09efe","surface-container-highest":"#e5deff","on-secondary":"#ffffff","secondary":"#6250aa","surface":"#fdf8ff","on-secondary-fixed":"#1d0061","on-error-container":"#93000a","on-background":"#1c163c","surface-tint":"#5f44d3","outline-variant":"#c9c4d7","on-error":"#ffffff","surface-variant":"#e5deff","primary-fixed":"#e6deff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-xl":"2rem","gutter":"1rem","margin":"1rem","space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"body-lg":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen selection:bg-surface-variant"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(46,0,149,0.04)]"><div class="px-gutter h-6 flex items-center justify-between text-on-surface"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] leading-none">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px] leading-none">wifi</span><span class="material-symbols-outlined text-[16px] leading-none">battery_full</span></div></div><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Back" class="w-11 h-11 -ml-2 flex items-center justify-center rounded-full text-on-surface hover:text-primary-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="VacciCare Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClvijmh_Qg_k35OK8wVoq_yFpz_Hkuinz17jB8K2cKHGwEj5w0G3hMwI7feN7GLdLTjQ-ou8wdUkZB8Aeyh7VTPrVS9BWgaCA0MQHp1wP68hNpNajKab4rXp1WHJOt6gLrgz9_HMxHICumQU7WDRagvFSodYcNvijC1L2ak2mRezuNYJmbv_OMXTlpXrc67kIDY-CNVGre5oUz53qlDGtZxThWOXLlT4Hyz3xpHCoy"/><h1 class="font-headline-md text-headline-md font-bold text-on-surface truncate">Vaccine Dose Details</h1></div><div class="flex items-center gap-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQqb3QFfKrQF-mmcJS-1Dlwfylo4MCj6023VI2TRP6VWSK7nO9TPlVKiKkPAu-8yDjLHXsogkYOKLWJZeeJrGm9rjFJOA2L1bVFe1Jl7UKPnkFsmcHHlu-ZQ_FKWZ_XsZKSUXqxFg5q5H9QDWKJ3ehvSx-_upBcnRAMAtfg_r13XTchaCH39HaDiturPGIiFmtqF76uKpTLMHBQGiR4Ng8Jp2n4F1KU-2a682ZD_HV"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-margin"><div class="flex flex-col w-full pb-28 space-y-4">
+<!-- Hero Vaccine Summary Card -->
+<section class="bg-surface-container-lowest rounded-[20px] p-5 shadow-[0_4px_20px_rgba(46,0,149,0.05)] relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-surface-container-high/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-3.5 relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-surface-container flex items-center justify-center shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/10 text-tertiary font-label-sm text-label-sm font-semibold mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+          Essential NPI Schedule
+        </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface leading-tight">
+          Pentavalent
+        </h2>
+<span class="font-label-md text-label-md font-semibold text-secondary block mt-0.5">
+          (DPT-HepB-Hib)
+        </span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+      Protects infants against 5 critical diseases: Diphtheria, Pertussis (Whooping cough), Tetanus, Hepatitis B, and Haemophilus influenzae type b.
+    </p>
+<!-- Visual mini badge cluster -->
+<div class="flex flex-wrap gap-1.5 mt-3.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-medium">Diphtheria</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-medium">Pertussis</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-medium">Tetanus</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-medium">Hep B</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-medium">Hib</span>
+</div>
+</section>
+<!-- Segmented Tabs Navigation -->
+<nav aria-label="Section Tabs" class="flex p-1 bg-surface-container rounded-full">
+<button class="flex-1 py-2.5 text-center rounded-full font-label-lg text-label-lg font-bold bg-primary text-on-primary shadow-sm transition-all duration-200" id="tab-overview" onclick="switchTab('overview')">
+      Overview
+    </button>
+<button class="flex-1 py-2.5 text-center rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-on-surface transition-all duration-200" id="tab-schedule" onclick="switchTab('schedule')">
+      Schedule
+    </button>
+<button class="flex-1 py-2.5 text-center rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-on-surface transition-all duration-200" id="tab-sideeffects" onclick="switchTab('sideeffects')">
+      Side Effects
+    </button>
+</nav>
+<!-- Tab 1: Overview Content Slot -->
+<div class="flex flex-col space-y-3.5" id="content-overview">
+<!-- Hausa Voice Audio Assist Card -->
+<section class="bg-gradient-to-r from-surface-container-high to-surface-container rounded-[20px] p-4 flex items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<button aria-label="Listen in Hausa" class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-[0_4px_12px_rgba(46,0,149,0.25)] active:scale-95 transition-transform" id="audio-play-btn" onclick="toggleAudioAssist()">
+<span class="material-symbols-outlined text-[24px]" id="audio-icon" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+<div class="min-w-0">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">
+<span class="material-symbols-outlined text-[13px]">translate</span>
+            Saurari da Hausa
+          </span>
+<p class="font-label-lg text-label-lg font-bold text-on-surface truncate">Bayani a Harshen Hausa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">0:48 mins • Audio guide</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-semibold text-primary shrink-0 shadow-xs">
+        Bilingual
+      </span>
+</section>
+<!-- Information Bento Cards -->
+<div class="space-y-3">
+<!-- Purpose -->
+<article class="bg-surface-container-lowest rounded-[20px] p-4 flex items-start gap-3.5 shadow-[0_3px_14px_rgba(46,0,149,0.04)]">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Purpose</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-snug">
+            Prevents 5 life-threatening bacterial infections and liver complications in early infancy.
+          </p>
+</div>
+</article>
+<!-- Recommended Timing -->
+<article class="bg-surface-container-lowest rounded-[20px] p-4 flex items-start gap-3.5 shadow-[0_3px_14px_rgba(46,0,149,0.04)]">
+<div class="w-11 h-11 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Recommended Timing</h3>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Ages</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 leading-snug">
+            Administered precisely at <strong class="font-semibold text-on-surface">6 weeks</strong>, <strong class="font-semibold text-on-surface">10 weeks</strong>, and <strong class="font-semibold text-on-surface">14 weeks</strong> after birth.
+          </p>
+</div>
+</article>
+<!-- Dose Structure & Benefits Grid -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Dose -->
+<article class="bg-surface-container-lowest rounded-[20px] p-4 flex flex-col justify-between shadow-[0_3px_14px_rgba(46,0,149,0.04)]">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">colorize</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Dose Regimen</h3>
+<p class="font-headline-md text-headline-md font-bold text-primary mt-0.5">3 Doses</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">0.5 ml injection (Thigh)</p>
+</div>
+</article>
+<!-- Benefits -->
+<article class="bg-surface-container-lowest rounded-[20px] p-4 flex flex-col justify-between shadow-[0_3px_14px_rgba(46,0,149,0.04)]">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/10 flex items-center justify-center text-tertiary mb-2">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-on-surface">Key Benefits</h3>
+<p class="font-headline-md text-headline-md font-bold text-tertiary mt-0.5">Full Defense</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Lifetime antibody wall</p>
+</div>
+</article>
+</div>
+<!-- Verified Clinical Advisory Note -->
+<aside class="bg-surface-container-low rounded-[20px] p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-primary shrink-0">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Approved by <span class="font-semibold text-on-surface">National Primary Health Care Development Agency (NPHCDA)</span> Nigeria. Free of charge at public PHCs.
+        </p>
+</aside>
+</div>
+</div>
+<!-- Tab 2: Schedule View Slot (Hidden initially) -->
+<div class="hidden flex flex-col space-y-3" id="content-schedule">
+<div class="bg-surface-container-lowest rounded-[20px] p-4 shadow-[0_3px_14px_rgba(46,0,149,0.04)]">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-3">Pentavalent 3-Step Milestones</h3>
+<!-- Timeline Items -->
+<div class="space-y-4 relative pl-7 before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<!-- Milestone 1 -->
+<div class="relative">
+<div class="absolute -left-7 top-0.5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pentavalent 1</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">Completed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">At 6 Weeks • Administered 16 Feb 2026</p>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative">
+<div class="absolute -left-7 top-0.5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pentavalent 2</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">Completed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">At 10 Weeks • Administered 16 Mar 2026</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative">
+<div class="absolute -left-7 top-0.5 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">calendar_clock</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary">Pentavalent 3</span>
+<span class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">Due Next</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5 font-medium">Scheduled: 28 Oct 2026</p>
+<p class="font-label-sm text-label-sm text-secondary mt-0.5">Due at 14 Weeks milestone</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 3: Side Effects Slot (Hidden initially) -->
+<div class="hidden flex flex-col space-y-3" id="content-sideeffects">
+<!-- Reassuring Note Banner -->
+<div class="bg-tertiary-container/10 rounded-[20px] p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-[22px] shrink-0" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-tertiary">Normal Body Response</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Mild side effects are signs that your baby’s immune defense system is actively learning and building protective antibodies.
+        </p>
+</div>
+</div>
+<!-- Side Effects Checklist -->
+<div class="bg-surface-container-lowest rounded-[20px] p-4 shadow-[0_3px_14px_rgba(46,0,149,0.04)] space-y-3">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">Common Mild Effects (1–2 Days)</h3>
+<div class="flex items-start gap-3 pb-3 border-b-0">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">thermostat</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Mild Temperature / Fever</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Warm forehead or low-grade fever. Keep baby in light cotton clothes and offer frequent breastfeeding.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 pb-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">radio_button_checked</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Redness or Swelling at Thigh Site</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Slight tenderness where the injection was given. A cool clean damp cloth helps relieve comfort.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">mood_bad</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Mild Irritability &amp; Fussiness</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Baby may sleep more or cry softly. Soothing maternal skin-to-skin touch provides immediate calm.</p>
+</div>
+</div>
+</div>
+<!-- Red Flag Guidance -->
+<div class="bg-error-container/40 rounded-[20px] p-4 flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[22px] shrink-0">emergency</span>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-error">When to Visit Facility</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          If fever exceeds 39°C or crying lasts uninterrupted for more than 3 hours, immediately consult your local health worker or Murtala Mohammed Hospital.
+        </p>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Interactive Booking Bar -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-surface/90 backdrop-blur-lg z-40 max-w-md mx-auto shadow-[0_-8px_20px_rgba(46,0,149,0.06)]">
+<button class="w-full h-[52px] rounded-full bg-primary hover:bg-on-primary-fixed-variant active:scale-[0.98] text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(46,0,149,0.28)] transition-all" id="save-schedule-btn" onclick="saveToSchedule()">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark_add</span>
+<span>Save to Schedule</span>
+</button>
+</div>
+</div>
+<script>
+  function switchTab(tab) {
+    const tabs = ['overview', 'schedule', 'sideeffects'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-' + t);
+      const content = document.getElementById('content-' + t);
+      
+      if (t === tab) {
+        btn.className = "flex-1 py-2.5 text-center rounded-full font-label-lg text-label-lg font-bold bg-primary text-on-primary shadow-sm transition-all duration-200";
+        content.classList.remove('hidden');
+      } else {
+        btn.className = "flex-1 py-2.5 text-center rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-on-surface transition-all duration-200";
+        content.classList.add('hidden');
+      }
+    });
+  }
+
+  let isPlayingAudio = false;
+  function toggleAudioAssist() {
+    isPlayingAudio = !isPlayingAudio;
+    const icon = document.getElementById('audio-icon');
+    const playBtn = document.getElementById('audio-play-btn');
+    if (isPlayingAudio) {
+      icon.textContent = 'pause';
+      playBtn.classList.add('animate-pulse');
+    } else {
+      icon.textContent = 'volume_up';
+      playBtn.classList.remove('animate-pulse');
+    }
+  }
+
+  function saveToSchedule() {
+    const btn = document.getElementById('save-schedule-btn');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Saved to Aisha's Calendar!</span>`;
+    btn.classList.add('bg-tertiary');
+    btn.classList.remove('bg-primary');
+    
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.classList.remove('bg-tertiary');
+      btn.classList.add('bg-primary');
+    }, 2400);
+  }
+</script></main></body></html>
