@@ -8,3 +8,7 @@ A bilingual Flutter mobile app that helps parents track child immunization sched
 ![VacciCare Schedule](screenshots/schedule.png)
 
 ![VacciCare Profile](screenshots/user_reference.png)
+
+## 📱 VacciCare App Preview
+
+![VacciCare App](assets/images/user_reference.png)
